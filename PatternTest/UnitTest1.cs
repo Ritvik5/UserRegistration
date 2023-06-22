@@ -65,7 +65,7 @@ namespace PatternTest
         public void GivenPassword_WhenValidate_ShouldReturnValid()
         {
             //Arrange
-            string expectedResult = "Qwertyui";
+            string expectedResult = "qWertyui";
             ValidatePattern test = new ValidatePattern(expectedResult);
 
             //Act

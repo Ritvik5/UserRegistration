@@ -81,7 +81,7 @@ namespace UserRegistration
 
         public string ValidPassword()
         {
-            string passPattern = "^[A-Za-z0-9]{8,}$";
+            string passPattern = "(?=.*[A-Z])[A-Za-z0-9!@#$%_]{8,}";
             Regex regexObj = new Regex(passPattern);
             if (regexObj.IsMatch(this.data))
             {
