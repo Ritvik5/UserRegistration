@@ -61,5 +61,18 @@ namespace PatternTest
             //Assert
             Assert.AreEqual(expectedResult, result);
         }
+        [TestMethod]
+        public void GivenPassword_WhenValidate_ShouldReturnValid()
+        {
+            //Arrange
+            string expectedResult = "Qwertyui";
+            ValidatePattern test = new ValidatePattern(expectedResult);
+
+            //Act
+            string result = test.ValidPassword();
+
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }

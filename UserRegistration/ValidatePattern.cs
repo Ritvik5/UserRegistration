@@ -78,5 +78,21 @@ namespace UserRegistration
                 return "Invalid";
             }
         }
+
+        public string ValidPassword()
+        {
+            string passPattern = "^[A-Za-z0-9]{8,}$";
+            Regex regexObj = new Regex(passPattern);
+            if (regexObj.IsMatch(this.data))
+            {
+                Console.WriteLine("\nEntered input is correct!");
+                return this.data;
+            }
+            else
+            {
+                Console.WriteLine("\nEntered Input is incorrect!");
+                return "Invalid";
+            }
+        }
     }
 }
