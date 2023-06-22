@@ -6,6 +6,10 @@
         {
             Console.WriteLine("Welcome to User Registraction!!");
 
+            ValidatePattern obj = new ValidatePattern("abc.xyz@bl.co.in");
+
+            obj.ValidEmail();
+                
         }
     }
 }
