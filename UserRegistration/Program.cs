@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to User Registration!!!\n");
+            Console.WriteLine("Welcome to User Registraction!!");
+
         }
     }
 }
