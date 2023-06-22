@@ -74,5 +74,19 @@ namespace PatternTest
             //Assert
             Assert.AreEqual(expectedResult, result);
         }
+
+        [TestMethod]
+        public void GivenSampleEmail_WhenValidate_ShouldReturnValid()
+        {
+            //Arrange
+            string expectedResult = "abc111@abc.com";
+            ValidatePattern test = new ValidatePattern(expectedResult);
+
+            //Act
+            string result = test.ValidSampleEmail();
+
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }
