@@ -62,5 +62,21 @@ namespace UserRegistration
                 return "Invalid";
             }
         }
+
+        public string ValidMobileNumber()
+        {
+            string numberPattern = "^91[ ][6-9][0-9]{9}$";
+            Regex regexObj = new Regex(numberPattern);
+            if (regexObj.IsMatch(this.data))
+            {
+                Console.WriteLine("\nEntered input is correct!");
+                return this.data;
+            }
+            else
+            {
+                Console.WriteLine("\nEntered Input is incorrect!");
+                return "Invalid";
+            }
+        }
     }
 }
